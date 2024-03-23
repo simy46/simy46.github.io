@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Missipsa M'Hamed Annane</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fontawesome-->
+  <script src="https://kit.fontawesome.com/298d966629.js" crossorigin="anonymous"></script> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- JS -->
+  <script type="module" src="/portfolio/src/assets/js/main.js" defer></script>
+</head>
+<body>
+
+<div class="sidebar" id="mySidebar">
+  <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#blog">Blog</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="main-content" id="main">
+
+  <header id="home">
+    <div id="sidebar-btn" onclick="openNav()">&#9776;</div>
+
+    <h1>Annane Missipsa M'Hamed</h1>
+  </header>
+
+  <div class="section" id="about">
+    <div id="photo-container">
+        <a id="profile-picture-a" href="https://youtu.be/MHzEprtlgD0">
+            <img id="profile-picture" src="/portfolio/src/assets/img/profile_picture.jpg" style="border-radius: 50%;width: 152px;height: 152px;">
+        </a>
+    </div>
+    <div>
+      <h2 class="about-text">About</h2>
+      <p class="about-text">Hello, I'm Missipsa, a passionate second-year Computer Engineering student at Polytechnique Montreal. I excel in math and science, with a focus on C++ programming for complex problem-solving. Engaged in personal and collaborative projects, I balance multiple responsibilities, honing technical skills and leadership abilities. Emigrating to Canada instilled perseverance and self-improvement values. I strive for excellence, fueled by my parents' sacrifices. My portfolio showcases technical expertise, a thirst for knowledge, and resilience. I'm eager to contribute to the industry and learn from the best, ready to make an impact.</p>
+
+    </div>
+    <div id="cv-grades">
+      <a href="/portfolio/src/assets/pdf/CV_Missipsa_Annane.pdf" download="CV_Missipsa_Annane" style="text-decoration: none;">
+        <div class="infos">
+          <span>Download CV</span>
+          <button style="background-color: transparent;border:none;" >
+            <i class="fa-solid fa-download"></i>
+          </button> 
+        </div>
+      </a>
+        <div class="infos" id="grades">
+          <span>View snippet of grade</span>
+          <button style="background-color: transparent;border:none;" >
+            <i class="fa-regular fa-eye"></i>
+          </button> 
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+              <img src="/portfolio/src/assets/img/grades.png">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Ajouter contenue dans About -->
+  </div>
+
+  <div class="section" id="goals">
+    <h2>Goals</h2>
+    <p>Mes buts dans le futur.</p>
+    <!-- Défi -->
+  </div>
+
+  <!-- Projects -->
+  <div class="section" id="projects">
+    <h2>My Projects</h2>
+    <button class="slide-btn prev">&#10094;</button>
+    <div id="project-container">
+      <div class="projet projet-1">Projet 1</div>
+      <div class="projet projet-2">Projet 2</div>
+      <div class="projet projet-3">Projet 3</div>
+      <div class="projet projet-4">Projet 4</div>
+      <div class="projet projet-5">Projet 5</div>
+      <div class="projet projet-6">Projet 6</div>
+    </div>
+    <button class="slide-btn next">&#10095;</button>
+    <div class="projects-img">
+      <div class="img">
+        <img src="/portfolio/src/assets/img/kakashi.jpg" alt="projet-1">
+      </div>
+      <div class="img">
+        <img src="/portfolio/src/assets/img/kakashi.jpg" alt="projet-2">
+      </div>
+      <div class="img">
+        <img src="/portfolio/src/assets/img/kakashi.jpg" alt="projet-3">
+      </div>
+      <div class="img">
+        <img src="/portfolio/src/assets/img/kakashi.jpg" alt="projet-4">
+      </div>
+      <div class="img">
+        <img src="/portfolio/src/assets/img/kakashi.jpg" alt="projet-5">
+      </div>
+      <div class="img">
+        <img src="/portfolio/src/assets/img/kakashi.jpg" alt="projet-6">
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills (POO, Résolution problème, mes languages appris, etc.) -->
+  <div class="section" id="skillset">
+    <h2>Skillset</h2>
+    <div id="skills-container" class="scroll-container">
+      <div class="skills skill-1">
+        <img alt="C++" src="/portfolio/src/assets/img/c++.png">
+      </div>
+      <div class="skills skill-2">
+        <img alt="Python" src="/portfolio/src/assets/img/python.png">
+      </div>
+      <div class="skills skill-3">
+        <img alt="Java" src="/portfolio/src/assets/img/java.png">
+      </div>
+      <div class="skills skill-4">
+        <img alt="JavaScript" src="/portfolio/src/assets/img/js.png">
+      </div>
+      <div class="skills skill-5">
+        <img alt="Html" src="/portfolio/src/assets/img/html.png">
+      </div>
+      <div class="skills skill-6">
+        <img alt="CSS" src="/portfolio/src/assets/img/css.png">
+      </div>
+      <div class="skills skill-7">
+        <img alt="Assembly x86" src="/portfolio/src/assets/img/ASM.png">
+      </div>
+      <div class="skills skill-8">
+        <img alt="VHDL" src="/portfolio/src/assets/img/VHDL.png">
+      </div>
+      <div class="skills skill-9">
+        <img alt="???" src>
+      </div>
+      <div class="skills skill-10">
+        <img alt="???" src>
+      </div>
+    </div>
+    
+    <!-- Galerie de projets ou slider -->
+  </div>
+
+  
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h1 class="section-header">Contact me</h1>
+      <div class="contact-form-container">
+        <div id="progress-bar-container">
+          <div id="progress-bar"></div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <!-- Step 1 -->
+          <div class="form-step active-step">
+            <label for="name">What's your Name ?</label>
+            <input type="text" id="name" name="name" class="required" required>
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="required" required>
+            <button type="button" class="next-button">Next</button>
+          </div>
+          <!-- Step 2 -->
+          <div class="form-step">
+            <!-- What to put ? -->
+            <button type="button" class="prev-button">Previous</button>
+            <button type="button" class="next-button">Next</button>
+          </div>
+          <!-- Step 3 -->
+          <div class="form-step">
+            <label for="interest">What are your interest in me ?</label>
+            <textarea id="interest" name="interest" rows="4" cols="50"></textarea>
+            <button type="button" class="prev-button">Previous</button>
+            <button type="button" class="next-button" id="send-btn">Next</button>
+          </div>
+
+           <!-- Step 4 -->
+           <div class="form-step">
+            <label for="comments">Any comments on how to improve my website ?</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            <button type="button" class="prev-button">Previous</button>
+            <button type="button" class="next-button" id="send-btn">Send</button>
+          </div>
+         
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>© 2024 Missipsa M'Hamed Annane. Tous droits réservés.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/missipsa-annane-718a94252/" target="_blank">
+        <i class="fa-brands fa-linkedin fa-2x"></i>
+      </a>
+      <a href="https://github.com/simy46" target="_blank">
+        <i class="fa-brands fa-github fa-2x"></i>
+      </a>
+    </div>
+  </footer>
+</div>
+
+<script>
+
+// OPEN AND CLOSE SIDEBAR //
+function openNav() {
+  document.getElementById("sidebar-btn").style.visibility = "hidden";
+  document.getElementById("mySidebar").style.left = "0";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("sidebar-btn").style.visibility = "";
+  document.getElementById("mySidebar").style.left = "-250px";
+  document.getElementById("main").style.marginLeft= "0";
+}
+// --------------------------- //
+
+// CONTACT FORM //
+const steps = document.querySelectorAll('.form-step');
+const nextButtons = document.querySelectorAll('.next-button');
+const prevButtons = document.querySelectorAll('.prev-button');
+const progressBar = document.getElementById('progress-bar');
+let currentStep = 0;
+
+function updateProgressBar() {
+  const progress = (currentStep / (steps.length - 1)) * 100;
+  progressBar.style.width = `${progress}%`;
+}
+
+function changeStep(stepChange) {
+  const newStep = currentStep + stepChange;
+  if (newStep >= 0 && newStep < steps.length) {
+    steps[currentStep].classList.remove('active-step');
+    currentStep = newStep;
+    steps[currentStep].classList.add('active-step');
+    updateProgressBar();
+  }
+}
+
+function validateCurrentStep() {
+  const currentStepFields = steps[currentStep].querySelectorAll('.required');
+  let isValid = true;
+
+  currentStepFields.forEach(field => {
+    let errorMessage = field.nextElementSibling;
+    if (field.value.trim() === "") {
+      isValid = false;
+      if (!(errorMessage && errorMessage.classList.contains('error-message'))) {
+        errorMessage = document.createElement('p');
+        errorMessage.classList.add('error-message');
+        errorMessage.style.color = 'red';
+        errorMessage.textContent = `${field.name} is required`;
+        field.parentNode.insertBefore(errorMessage, field.nextSibling);
+      }
+    } else if (errorMessage && errorMessage.classList.contains('error-message')) {
+      errorMessage.remove(); // Remove error message if field is corrected
+    }
+  });
+
+  return isValid;
+}
+
+nextButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    if (validateCurrentStep()) {
+      changeStep(1);
+    }
+  });
+});
+
+prevButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    changeStep(-1);
+  });
+});
+document.getElementById('contact-form').addEventListener('submit', e => {
+  e.preventDefault();  // IMPLEMENTER CE QUI SE PASSE QUAND ON SEND À VOIR QUOI FAIRE //
+});
+
+document.getElementById('send-btn').addEventListener('click', e => {
+
+});
+// ----------------------------------------------- //
+
+// OPEN MODAL CLOSE MODAL //
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("grades");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+// ------------------------------------------------ //
+
+// SKILLS //
+const scrollContainer = document.getElementById('skills-container');
+scrollContainer.addEventListener('wheel', (event) => {
+  if (event.deltaY == 0) return;
+  event.preventDefault();
+  scrollContainer.scrollLeft += event.deltaY + event.deltaX;
+});
+  // ------------------------------------------------- //
+
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+
+  document.addEventListener('DOMContentLoaded', () => {
+  let currentIndex = 0;
+  const projects = document.querySelectorAll('.projet');
+  const totalProjects = projects.length;
+
+  function updateProjectDisplay(index) {
+    projects.forEach((project, i) => {
+      if (i === index) {
+        project.classList.add('active');
+      } else {
+        project.classList.remove('active');
+      }
+    });
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalProjects) % totalProjects;
+    updateProjectDisplay(currentIndex);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalProjects;
+    updateProjectDisplay(currentIndex);
+  });
+
+  updateProjectDisplay(0);
+});
+
+  
+</script>
+
+</body>
+</html>
