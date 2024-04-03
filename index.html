@@ -14,39 +14,52 @@
 
   <!-- JS -->
   <script type="module" src="/assets/js/main.js" defer></script>
+
+  <!-- Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+  <!-- Flickity -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 </head>
 <body>
 
 <div class="sidebar" id="mySidebar">
-  <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" id="close-btn">&times;</a>
   <a href="#home">Home</a>
   <a href="#about">About</a>
-  <a href="#portfolio">Portfolio</a>
-  <a href="#blog">Blog</a>
+  <a href="#goals">Goals</a>
+  <a href="#projects">Projects</a>
+  <a href="#skillset">Skill</a>
   <a href="#contact">Contact</a>
 </div>
 
 <div class="main-content" id="main">
 
   <header id="home">
-    <div id="sidebar-btn" onclick="openNav()">&#9776;</div>
+    <div id="sidebar-btn">&#9776;</div>
 
     <h1>Annane Missipsa M'Hamed</h1>
   </header>
 
   <div class="section" id="about">
-    <div id="photo-container">
+    <div id="photo-container">  
         <a id="profile-picture-a" href="https://youtu.be/MHzEprtlgD0">
             <img id="profile-picture" src="/assets/img/profile_picture.jpg" style="border-radius: 50%;width: 152px;height: 152px;">
         </a>
     </div>
-    <div>
-      <h2 class="about-text">About</h2>
-      <p class="about-text">Hello, I'm Missipsa, a passionate second-year Computer Engineering student at Polytechnique Montreal. I excel in math and science, with a focus on C++ programming for complex problem-solving. Engaged in personal and collaborative projects, I balance multiple responsibilities, honing technical skills and leadership abilities. Emigrating to Canada instilled perseverance and self-improvement values. I strive for excellence, fueled by my parents' sacrifices. My portfolio showcases technical expertise, a thirst for knowledge, and resilience. I'm eager to contribute to the industry and learn from the best, ready to make an impact.</p>
+    <div class="about-text">
+      <h2 id="about-title">About</h2>
+      <p id="about-text">Hello, I'm Missipsa, a passionate second-year Computer Engineering student at Polytechnique Montreal.
+         Engaged in personal and collaborative projects, I balance multiple responsibilities, honing technical skills and leadership abilities. 
+         Emigrating to Canada instilled perseverance and self-improvement values. I strive for excellence, fueled by my parents' sacrifices. 
+         My portfolio showcases technical expertise, a thirst for knowledge, and resilience. 
+         I'm eager to contribute to the industry and learn from the best, ready to make an impact.</p>
 
     </div>
     <div id="cv-grades">
-      <a href="//assets/pdf/CV_Missipsa_Annane.pdf" download="CV_Missipsa_Annane" style="text-decoration: none;"> <!-- CV -->
+      <a href="" download="" style="text-decoration: none;">
         <div class="infos">
           <span>Download CV</span>
           <button style="background-color: transparent;border:none;" >
@@ -64,7 +77,7 @@
           <div class="modal-content">
             <span class="close">&times;</span>
             <div class="modal-body">
-              <img src="//assets/img/grades.png"> <!-- GRADES -->
+              <img src="">
             </div>
           </div>
         </div>
@@ -117,46 +130,48 @@
   <!-- Skills (POO, Résolution problème, mes languages appris, etc.) -->
   <div class="section" id="skillset">
     <h2>Skillset</h2>
-    <div id="skill-problem">
-      <img src="/assets/img/thinking.png">
-    </div>
-    <div id="skill-creativity">
-      <img src="">
-    </div>
-    <div id="skills-container" class="scroll-container">
-      <div class="skills skill-1">
+      <div id="skill-problem">
+        <img src="/assets/img/thinking.png" alt="Problem Solving">
+        <p>Problem Solving</p>
+      </div>
+      <div id="skill-creativity">
+        <img src="/assets/img/creativity.avif" alt="Creativity">
+        <p>Creativity</p>
+      </div>
+    <div id="skills-container" class="scroll-container ">
+      <div class="skills ">
         <img alt="C++" src="/assets/img/c++.png">
+        <p>C++</p>
       </div>
-      <div class="skills skill-2">
+      <div class="skills ">
         <img alt="Python" src="/assets/img/python.png">
+        <p>Python</p>
       </div>
-      <div class="skills skill-3">
+      <div class="skills ">
         <img alt="Java" src="/assets/img/java.png">
+        <p>Java</p>
       </div>
-      <div class="skills skill-4">
+      <div class="skills ">
         <img alt="JavaScript" src="/assets/img/js.png">
+        <p>JS</p>
       </div>
-      <div class="skills skill-5">
+      <div class="skills ">
         <img alt="Html" src="/assets/img/html.png">
+        <p>HTML</p>
       </div>
-      <div class="skills skill-6">
+      <div class="skills ">
         <img alt="CSS" src="/assets/img/css.png">
+        <p>CSS</p>
       </div>
-      <div class="skills skill-7">
+      <div class="skills ">
         <img alt="Assembly x86" src="/assets/img/ASM.png">
+        <p>ASM</p>
       </div>
-      <div class="skills skill-8">
+      <div class="skills ">
         <img alt="VHDL" src="/assets/img/VHDL.png">
-      </div>
-      <div class="skills skill-9">
-        <img alt="???" src>
-      </div>
-      <div class="skills skill-10">
-        <img alt="???" src>
+        <p>VHDL</p>
       </div>
     </div>
-    
-    <!-- Galerie de projets ou slider -->
   </div>
 
   
@@ -173,11 +188,11 @@
           <!-- Step 1 -->
           <div class="form-step active-step">
             <label for="name">What's your Name ?</label>
-            <input type="text" id="name" name="name" class="required" required>
+            <input type="text" id="name" name="name" class="required">
             <label for="company">Company Name</label>
             <input type="text" id="company" name="company">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" class="required" required>
+            <input type="email" id="email" name="email" class="required">
             <button type="button" class="next-button">Next</button>
           </div>
           <!-- Step 2 -->
@@ -199,7 +214,7 @@
             <label for="comments">Any comments on how to improve my website ?</label>
             <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
             <button type="button" class="prev-button">Previous</button>
-            <button type="button" class="next-button" id="send-btn">Send</button>
+            <button type="button" class="next-button" id="send-btn">Submit</button>
           </div>
          
         </form>
@@ -220,149 +235,5 @@
     </div>
   </footer>
 </div>
-
-<script>
-
-// OPEN AND CLOSE SIDEBAR //
-function openNav() {
-  document.getElementById("sidebar-btn").style.visibility = "hidden";
-  document.getElementById("mySidebar").style.left = "0";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("sidebar-btn").style.visibility = "";
-  document.getElementById("mySidebar").style.left = "-250px";
-  document.getElementById("main").style.marginLeft= "0";
-}
-// --------------------------- //
-
-// CONTACT FORM //
-const steps = document.querySelectorAll('.form-step');
-const nextButtons = document.querySelectorAll('.next-button');
-const prevButtons = document.querySelectorAll('.prev-button');
-const progressBar = document.getElementById('progress-bar');
-let currentStep = 0;
-
-function updateProgressBar() {
-  const progress = (currentStep / (steps.length - 1)) * 100;
-  progressBar.style.width = `${progress}%`;
-}
-
-function changeStep(stepChange) {
-  const newStep = currentStep + stepChange;
-  if (newStep >= 0 && newStep < steps.length) {
-    steps[currentStep].classList.remove('active-step');
-    currentStep = newStep;
-    steps[currentStep].classList.add('active-step');
-    updateProgressBar();
-  }
-}
-
-function validateCurrentStep() {
-  const currentStepFields = steps[currentStep].querySelectorAll('.required');
-  let isValid = true;
-
-  currentStepFields.forEach(field => {
-    let errorMessage = field.nextElementSibling;
-    if (field.value.trim() === "") {
-      isValid = false;
-      if (!(errorMessage && errorMessage.classList.contains('error-message'))) {
-        errorMessage = document.createElement('p');
-        errorMessage.classList.add('error-message');
-        errorMessage.style.color = 'red';
-        errorMessage.textContent = `${field.name} is required`;
-        field.parentNode.insertBefore(errorMessage, field.nextSibling);
-      }
-    } else if (errorMessage && errorMessage.classList.contains('error-message')) {
-      errorMessage.remove(); // Remove error message if field is corrected
-    }
-  });
-
-  return isValid;
-}
-
-nextButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    if (validateCurrentStep()) {
-      changeStep(1);
-    }
-  });
-});
-
-prevButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    changeStep(-1);
-  });
-});
-document.getElementById('contact-form').addEventListener('submit', e => {
-  e.preventDefault();  // IMPLEMENTER CE QUI SE PASSE QUAND ON SEND À VOIR QUOI FAIRE //
-});
-
-document.getElementById('send-btn').addEventListener('click', e => {
-
-});
-// ----------------------------------------------- //
-
-// OPEN MODAL CLOSE MODAL //
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("grades");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-// ------------------------------------------------ //
-
-// SKILLS //
-const scrollContainer = document.getElementById('skills-container');
-scrollContainer.addEventListener('wheel', (event) => {
-  if (event.deltaY == 0) return;
-  event.preventDefault();
-  scrollContainer.scrollLeft += event.deltaY + event.deltaX;
-});
-  // ------------------------------------------------- //
-
-  const prevBtn = document.querySelector('.prev');
-  const nextBtn = document.querySelector('.next');
-
-  document.addEventListener('DOMContentLoaded', () => {
-  let currentIndex = 0;
-  const projects = document.querySelectorAll('.projet');
-  const totalProjects = projects.length;
-
-  function updateProjectDisplay(index) {
-    projects.forEach((project, i) => {
-      if (i === index) {
-        project.classList.add('active');
-      } else {
-        project.classList.remove('active');
-      }
-    });
-  }
-
-  prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + totalProjects) % totalProjects;
-    updateProjectDisplay(currentIndex);
-  });
-
-  nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % totalProjects;
-    updateProjectDisplay(currentIndex);
-  });
-
-  updateProjectDisplay(0);
-});
-
-  
-</script>
-
 </body>
 </html>

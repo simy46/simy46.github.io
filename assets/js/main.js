@@ -1,13 +1,16 @@
-import MainEventController from './MainEventController';
+import MainEventController from './MainEventController.js';
 
-class MainWindow {
-  constructor() {
-    
+var modal = document.getElementById("myModal");
+const mainEventController = new MainEventController();
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }
 
-window.onload = {
-    
+window.onload = () => {
+  const scrollContainer = document.getElementById('skills-container');
+  mainEventController.listenToAllEvents();
 }
-
-  
